@@ -20,8 +20,7 @@
 //   showModal('Hello, this is a custom modal!');
 
 //Tax Rate Calculate
-let price = 50;
-let taxRate = .10;
-let discount = .15;
-let priceAfterDiscount = price + (price*taxRate) - (price*discount);
-console.log(`The Total Price after applying discount is ${priceAfterDiscount}`);
+let price = 100;
+let taxRate = .7;
+let priceAfterTax = price - (price + (price*taxRate));
+console.log(`The Total Price after applying discount is ${priceAfterTax}`);
