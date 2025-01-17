@@ -18,3 +18,9 @@
 //   }
   
 //   showModal('Hello, this is a custom modal!');
+
+let price = 50;
+let discount = (20/100)
+console.log(discount);
+let priceAfterDiscount = price - price*discount;
+console.log(`The Total Price after applying discount is ${priceAfterDiscount}`);
