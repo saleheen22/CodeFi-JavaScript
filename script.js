@@ -44,4 +44,5 @@ let tax = .10;
 let discount = .15;
 let priceWithTax = price + price*tax;
 let finalPrice = price - discount*priceWithTax;
-console.log(finalPrice);
+console.log('Price after adding Tax: ' + priceWithTax);
+console.log('Final Price: '+ finalPrice);
