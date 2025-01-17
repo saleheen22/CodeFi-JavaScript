@@ -18,9 +18,30 @@
 //   }
   
 //   showModal('Hello, this is a custom modal!');
+//Greeting Message
+// let username = prompt('Please give me your username');
+// let favoriteColor = prompt('Please give me your favorite color');
+// console.log(`Hi ${username}, your favorite color is ${favoriteColor}, and welcome to CodeFi JS class`);
 
 //Tax Rate Calculate
-let price = 100;
-let taxRate = .7;
-let priceAfterTax = price - (price + (price*taxRate));
-console.log(`The Total Price after applying discount is ${priceAfterTax}`);
+// let price = 100;
+// let taxRate = .7;
+// let priceAfterTax = price - (price + (price*taxRate));
+// console.log(`The Total Price after applying discount is ${priceAfterTax}`);
+let firstName = 'Abrar';
+let lastName = 'Saleheen'
+console.log(firstName+ " " + lastName);
+
+//Inventory
+
+let inventory = 100 - 15 + 20;
+console.log(inventory);
+
+//Tax with discount
+
+let price = 120;
+let tax = .10;
+let discount = .15;
+let priceWithTax = price + price*tax;
+let finalPrice = price - discount*priceWithTax;
+console.log(finalPrice);
