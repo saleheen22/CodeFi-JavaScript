@@ -34,4 +34,13 @@ const student = {
         
     }
 }
-console.log(student.avgGrade());
+// console.log(student.avgGrade());
+//Exercise 3
+const btn = document.querySelector("#btn-america") as HTMLButtonElement;
+document.addEventListener('click', function(){
+    if(btn){
+        btn.style.backgroundColor = 'red';
+
+    }
+    
+})
