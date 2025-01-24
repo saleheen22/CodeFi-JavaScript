@@ -16,10 +16,20 @@ var student = {
     }
 };
 // console.log(student.avgGrade());
-//Exercise 3
+// Exercise 1: Change the background color of #btn-america when it's clicked
 var btn = document.querySelector("#btn-america");
-document.addEventListener('click', function () {
-    if (btn) {
-        btn.style.backgroundColor = 'red';
-    }
-});
+if (btn) {
+    btn.addEventListener("click", function (event) {
+        event.stopPropagation();
+        btn.style.backgroundColor = "red";
+    });
+}
+// Exercise 4: 
+var btnChng = document.querySelector("#chng-para");
+var pargraph = document.querySelector(".para");
+if (btnChng && pargraph) {
+    btnChng.addEventListener("click", function (event) {
+        event.stopPropagation();
+        pargraph.innerText = "America is Great. Go America Go!!!";
+    });
+}

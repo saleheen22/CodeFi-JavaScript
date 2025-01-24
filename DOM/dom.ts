@@ -35,12 +35,23 @@ const student = {
     }
 }
 // console.log(student.avgGrade());
-//Exercise 3
+// Exercise 1: Change the background color of #btn-america when it's clicked
 const btn = document.querySelector("#btn-america") as HTMLButtonElement;
-document.addEventListener('click', function(){
-    if(btn){
-        btn.style.backgroundColor = 'red';
 
-    }
-    
-})
+if (btn) {
+    btn.addEventListener("click", function (event) {
+        event.stopPropagation(); 
+        btn.style.backgroundColor = "red";
+    });
+}
+
+// Exercise 4: 
+const btnChng = document.querySelector("#chng-para") as HTMLButtonElement;
+const pargraph = document.querySelector(".para") as HTMLParagraphElement;
+
+if (btnChng && pargraph) {
+    btnChng.addEventListener("click", function (event) {
+        event.stopPropagation(); 
+        pargraph.innerText = "America is Great. Go America Go!!!";
+    });
+}
