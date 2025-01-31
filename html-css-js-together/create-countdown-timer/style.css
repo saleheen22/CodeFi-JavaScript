@@ -1,0 +1,9 @@
+button{
+    background-color: green;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+#counter{
+    transition: 15s;
+}

@@ -2,7 +2,7 @@
 
 {
   "scripts": {
-  "start": "ts-node ./DOM/dom.ts"
+  "start": "ts-node ./array-loop/array.ts"
 },
   "devDependencies": {
     "@types/node": "^22.10.10",
